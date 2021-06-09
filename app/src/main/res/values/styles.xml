@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.DiardeOnAndroid.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+    </style>
+
+    <style name="DiardeDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/mostanza</item>
+    </style>
+
+</resources>

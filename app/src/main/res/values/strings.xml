@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">DIARDE</string>
+    <string name="action_logout">Logout</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_repeat">Password Confirmation</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_connection">No connection to the server could be established.</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This app needs camera permission.</string>
+
+    <string name="create_new_project">CREATE NEW PROJECT</string>
+    <string name="browse_projects">BROWSE PROJECTS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="tutorial">TUTORIAL</string>
+
+    <string name="view_model">VIEW MODEL</string>
+    <string name="view_plan">VIEW PLAN</string>
+    <string name="view_photos">VIEW PHOTOS</string>
+    <string name="request_files">REQUEST FILES</string>
+
+    <string name="modal_delete_projects">Delete selected Projects?</string>
+    <string name="modal_delete_rooms">Delete selected Rooms?</string>
+
+    <string name="projects">Projects</string>
+    <string name="rooms">Rooms</string>
+    <string name="photos">Photos</string>
+    <string name="results">Results</string>
+    <string name="requestfiles">Request Files</string>
+    <string name="roomplan">Room Plan</string>
+    <string name="model">Model</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="submit">Submit</string>
+    <string name="request">Request</string>
+    <string name="ok">Ok</string>
+
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+
+    <string name="pendingRequest">Your photos are being processed. Thank you for being patient.</string>
+
+    <string name="skpmodel">SketchUp - .skp</string>
+    <string name="dxffile">AutoCAD - .dxf</string>
+
+    <string name="empty_project_list_notfication">You are at the project level. Click on the "+"-button below to create your first project.</string>
+    <string name="empty_room_list_notfication">You are at room level. Click on the "+"-button below to create a room for this project.</string>
+    <string name="empty_photo_list_notfication">Click on the "+"-button below to take photos of the room. After taking your photos you can submit the images
+                                                by clicking on the upload-button at the bottom left.</string>
+
+    <string name="requested_models_sent">An email containing the requested models has been send to your address. Please check your inbox.</string>
+    <string name="requested_models_error">We encountered an embarassing error. Please contact customer support.</string>
+
+    <string name="submit_photos_message">Are you ready to submit the photos?</string>
+    <string name="photos_submitted_message">Thank you. We are on it and will process your photos shortly.</string>
+
+    <string name="enter_valid_email">Please enter a valid email.</string>
+    <string name="reset_email_issued">An email has been sent. Use the link in the email to reset your password.</string>
+
+    <!-- Getting Started -->
+    <string name="getting_started_1">Tap the Button CREATE NEW PROJECT.</string>
+    <string name="getting_started_2">Enter a project name. A project often refers to a building.</string>
+    <string name="getting_started_3">Create a new room by tapping on the +-button at the bottom to the right.</string>
+    <string name="getting_started_4">Tap on the +-button at the bottom right to take photos.</string>
+
+
+
+</resources>

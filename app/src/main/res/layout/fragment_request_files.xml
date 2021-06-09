@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBoxSKP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:buttonTint="@color/orangered"
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/skpmodel"
+            android:enabled="false"
+            android:textColor="@color/material_on_primary_emphasis_high_type"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDXF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:buttonTint="@color/orangered"
+            android:paddingStart="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/dxffile"
+            android:enabled="false"
+            android:textColor="@color/material_on_primary_emphasis_high_type"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="?attr/colorPrimaryVariant" />
+
+            <Button
+                android:id="@+id/buttonRequest"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:text="@string/request"
+                android:textColor="?attr/colorPrimaryVariant" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

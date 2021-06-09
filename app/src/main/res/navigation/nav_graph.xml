@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PrincipalFragment">
+
+    <fragment
+        android:id="@+id/PrincipalFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.PrincipalFragment"
+        android:label="PrincipalFragment"
+        tools:layout="@layout/fragment_principal">
+        <action
+            android:id="@+id/action_PrincipalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_PrincipalFragment_to_newProjectFragment"
+            app:destination="@id/newProjectFragment" />
+        <action
+            android:id="@+id/action_PrincipalFragment_to_projectsFragment"
+            app:destination="@id/projectsFragment" />
+        <action
+            android:id="@+id/action_PrincipalFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newProjectFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.project.NewProjectFragment"
+        android:label="NewProjectFragment">
+        <action
+            android:id="@+id/fromNewProjectToPrincipal"
+            app:destination="@id/PrincipalFragment" />
+        <action
+            android:id="@+id/action_newProjectFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.project.ProjectsFragment"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_projects">
+        <action
+            android:id="@+id/fromProjectsToNewProject"
+            app:destination="@id/newProjectFragment" />
+        <action
+            android:id="@+id/fromProjectsToRooms"
+            app:destination="@id/roomsFragment" />
+        <action
+            android:id="@+id/action_projectsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomsFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.room.RoomsFragment"
+        android:label="RoomsFragment">
+        <action
+            android:id="@+id/action_roomsFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+        <action
+            android:id="@+id/action_roomsFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_roomsFragment_to_pendingRequestFragment"
+            app:destination="@id/pendingRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.photos.TakePhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_take_photos">
+        <action
+            android:id="@+id/action_photosFragment_to_cameraKitFragment"
+            app:destination="@id/cameraKitFragment" />
+        <action
+            android:id="@+id/action_photosFragment_to_pendingRequestFragment"
+            app:destination="@id/pendingRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.authentication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_passwordHelpFragment"
+            app:destination="@id/passwordHelpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_PrincipalFragment"
+            app:destination="@id/PrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.authentication.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_PrincipalFragment"
+            app:destination="@id/PrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.ResultFragment"
+        android:label="ResultFragment">
+        <action
+            android:id="@+id/action_resultFragment_to_viewPhotosFragment"
+            app:destination="@id/viewPhotosFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_requestFilesFragment"
+            app:destination="@id/requestFilesFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_floorplanFragment"
+            app:destination="@id/floorplanFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_modelFragment"
+            app:destination="@id/modelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendingRequestFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.PendingRequestFragment"
+        android:label="fragment_pending_request"
+        tools:layout="@layout/fragment_pending_request">
+        <action
+            android:id="@+id/action_pendingRequestFragment_to_viewPhotosFragment"
+            app:destination="@id/viewPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPhotosFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.photos.ViewPhotosFragment"
+        android:label="ViewPhotosFragment" />
+    <fragment
+        android:id="@+id/requestFilesFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.requestfiles.RequestFilesFragment"
+        android:label="RequestFilesFragment" />
+    <fragment
+        android:id="@+id/floorplanFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.floorplan.FloorplanFragment"
+        android:label="fragment_floorplan"
+        tools:layout="@layout/fragment_floorplan" />
+    <fragment
+        android:id="@+id/cameraKitFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.camera.CameraKitFragment"
+        android:label="fragment_camera_kit"
+        tools:layout="@layout/fragment_camera_kit" />
+    <fragment
+        android:id="@+id/passwordHelpFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.authentication.PasswordHelpFragment"
+        android:label="PasswordHelpFragment">
+        <action
+            android:id="@+id/action_passwordHelpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modelFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.result.model.ModelFragment"
+        android:label="fragment_model"
+        tools:layout="@layout/fragment_model" />
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.studiocinqo.diardeonandroid.ui.fragments.instructions.InstructionsFragment"
+        android:label="fragment_instructions"
+        tools:layout="@layout/fragment_instructions" />
+
+</navigation>

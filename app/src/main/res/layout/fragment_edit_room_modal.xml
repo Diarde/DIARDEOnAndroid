@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextRoomNameForModal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Project Name"
+        android:backgroundTint="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextRoomDescriptionFroModal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Description"
+        android:backgroundTint="@color/material_on_primary_disabled"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:inputType="textPersonName" />
+</LinearLayout>

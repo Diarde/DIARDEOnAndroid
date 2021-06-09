@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/newTextProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="Project Name"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:textColorHint="@color/material_on_primary_emphasis_medium"
+            android:textColor="@color/material_on_primary_emphasis_high_type"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/newTextProjectDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="Description"
+            android:backgroundTint="@color/material_on_primary_disabled"
+            android:textColorHint="@color/material_on_primary_emphasis_medium"
+            android:textColor="@color/material_on_primary_emphasis_high_type"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancelNewProject"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="?attr/colorPrimaryVariant" />
+
+            <Button
+                android:id="@+id/buttonCreateNewProject"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="?attr/colorPrimaryVariant" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

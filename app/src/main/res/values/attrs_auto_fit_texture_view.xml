@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="AutoFitTextureView">
+        <attr name="eString" format="string" />
+        <attr name="eDimension" format="dimension" />
+        <attr name="eColor" format="color" />
+        <attr name="eDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>
